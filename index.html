@@ -3,7 +3,71 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Abdullah — Computer Science, UET Lahore</title>
+
+<!-- ============ SEO: Primary Meta Tags ============ -->
+<title>Abdullah Masood — Software Engineer & Computer Science Student, UET Lahore</title>
+<meta name="title" content="Abdullah Masood — Software Engineer & Computer Science Student, UET Lahore">
+<meta name="description" content="Abdullah Masood is a Computer Science student at UET Lahore building compilers, databases, and full-stack apps from first principles — creator of the EZ programming language, TxtDB, urdu-nlp (PyPI), and Splitkar, a Pakistani bill-splitting app.">
+<meta name="keywords" content="Abdullah Masood, Abdullah Masood UET Lahore, Abdullah Masood software engineer, Abdullah Masood developer, Abdullah Masood computer science, Abdullah Masood Splitkar, Abdullah Masood EZ language, Abdullah Masood Pakistan developer, imabd645">
+<meta name="author" content="Abdullah Masood">
+<meta name="robots" content="index, follow">
+<meta name="language" content="English">
+<meta name="revisit-after" content="7 days">
+<link rel="canonical" href="https://abdullahmasood.dev/">
+
+<!-- ============ SEO: Open Graph / Facebook ============ -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://abdullahmasood.dev/">
+<meta property="og:title" content="Abdullah Masood — Software Engineer & Computer Science Student">
+<meta property="og:description" content="Compilers, databases, and web apps built from first principles. Explore Abdullah Masood's work: the EZ programming language, TxtDB, urdu-nlp, and Splitkar.">
+<meta property="og:image" content="https://abdullahmasood.dev/og-image.jpg">
+<meta property="og:site_name" content="Abdullah Masood">
+<meta property="og:locale" content="en_US">
+
+<!-- ============ SEO: Twitter Card ============ -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://abdullahmasood.dev/">
+<meta name="twitter:title" content="Abdullah Masood — Software Engineer & Computer Science Student">
+<meta name="twitter:description" content="Compilers, databases, and web apps built from first principles. Explore Abdullah Masood's work: the EZ programming language, TxtDB, urdu-nlp, and Splitkar.">
+<meta name="twitter:image" content="https://abdullahmasood.dev/og-image.jpg">
+
+<!-- ============ SEO: Structured Data (JSON-LD, schema.org Person) ============ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Abdullah Masood",
+  "alternateName": "imabd645",
+  "url": "https://abdullahmasood.dev/",
+  "email": "mailto:imabd645@gmail.com",
+  "sameAs": [
+    "https://github.com/imabd645",
+    "https://www.linkedin.com/in/abdullah-masood-3056a5379/",
+    "https://pypi.org/project/urdu-nlp/",
+    "https://splitkar.site"
+  ],
+  "jobTitle": "Software Engineer / Computer Science Student",
+  "affiliation": {
+    "@type": "CollegeOrUniversity",
+    "name": "University of Engineering and Technology, Lahore"
+  },
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "University of Engineering and Technology, Lahore"
+  },
+  "knowsAbout": [
+    "C++",
+    "Compiler Design",
+    "Database Systems",
+    "Python",
+    "FastAPI",
+    "Full-Stack Development",
+    "Programming Language Design"
+  ],
+  "description": "Abdullah Masood is a Computer Science student at UET Lahore who builds compilers, databases, and web applications from first principles, including the EZ programming language, TxtDB, urdu-nlp, and Splitkar."
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -105,6 +169,14 @@ nav {
 .hero-name span:hover {
   color: var(--accent);
   transform: translateY(-0.06em);
+}
+
+.hero-fullname {
+  font-family: var(--mono);
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin-top: 0.75rem;
+  letter-spacing: 0.01em;
 }
 
 .hero-tagline {
@@ -368,6 +440,17 @@ footer {
   background: var(--bg);
 }
 
+/* visually-hidden helper for SEO copy that shouldn't disrupt the design */
+.visually-hidden {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* REVEAL */
 .reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.7s ease, transform 0.7s ease; }
 .reveal.visible { opacity: 1; transform: translateY(0); }
@@ -406,10 +489,11 @@ footer {
 <section class="hero" id="home">
   <div class="hero-eyebrow">COMPUTER SCIENCE — UET LAHORE</div>
   <h1 class="hero-name" id="heroName">Abdullah</h1>
+  <div class="hero-fullname">Abdullah Masood · Software Engineer &amp; CS Student, Lahore, Pakistan</div>
   <p class="hero-tagline">
-    I build <strong>compilers, databases, and web apps</strong> from first principles —
-    a scripting language with its own package manager, a file-based DBMS, a SQL engine
-    that runs on raw CSV files. Studying at UET Lahore, drawn equally to systems code
+    I'm <strong>Abdullah Masood</strong>, and I build <strong>compilers, databases, and web apps</strong> from
+    first principles — a scripting language with its own package manager, a file-based DBMS, a SQL engine
+    that runs on raw CSV files. Studying Computer Science at UET Lahore, drawn equally to systems code
     and the history behind it.
   </p>
   <div class="hero-cta">
@@ -426,15 +510,16 @@ footer {
   <div class="about-body reveal">
     <div>
       <p class="about-lead">
-        I'm a CS student who'd rather write the <span class="accent">lexer, parser, and runtime</span>
-        myself than reach for a framework that hides them.
+        I'm <span class="accent">Abdullah Masood</span>, a CS student who'd rather write the lexer, parser,
+        and runtime myself than reach for a framework that hides them.
       </p>
       <p class="about-sub">
         My work sits at the systems layer — language design, database internals, and the
         occasional native Windows app built with nothing but the Win32 API. I prefer working
         from a design document to a finished implementation over scaffolding tools doing the
         thinking for me. Outside the terminal, I'm just as interested in the human decisions
-        and accidents that shaped how computing ended up looking the way it does.
+        and accidents that shaped how computing ended up looking the way it does. If you're
+        searching for Abdullah Masood's portfolio, GitHub, or projects, you're in the right place.
       </p>
     </div>
     <div class="skills-flow">
@@ -452,20 +537,20 @@ footer {
 
   <div class="projects-list reveal">
 
-    <a class="project-row" href="https://github.com/imabd645/EZ-language" target="_blank">
+    <a class="project-row" href="https://github.com/imabd645/EZ-language" target="_blank" rel="noopener">
       <div class="p-index">01</div>
       <div class="p-main">
         <div class="p-title-row">
           <div class="p-title">EZ Language</div>
           <div class="p-featured">Featured</div>
         </div>
-        <div class="p-desc">A custom scripting language — full C++17 tree-walk interpreter: lexer, parser, AST, evaluator, runtime. Ships with its own package manager, a standard library (GUI, PDF, database, math), and a full documentation site.</div>
+        <div class="p-desc">A custom scripting language by Abdullah Masood — full C++17 tree-walk interpreter: lexer, parser, AST, evaluator, runtime. Ships with its own package manager, a standard library (GUI, PDF, database, math), and a full documentation site.</div>
         <div class="p-tags"><span>C++17</span><span>Interpreter</span><span>Package Manager</span><span>Docs Site</span></div>
       </div>
       <div class="p-arrow">↗</div>
     </a>
 
-    <a class="project-row" href="https://github.com/imabd645/Backend-builder" target="_blank">
+    <a class="project-row" href="https://github.com/imabd645/Backend-builder" target="_blank" rel="noopener">
       <div class="p-index">02</div>
       <div class="p-main">
         <div class="p-title-row"><div class="p-title">Backend Builder</div></div>
@@ -475,7 +560,7 @@ footer {
       <div class="p-arrow">↗</div>
     </a>
 
-    <a class="project-row" href="https://github.com/imabd645/CSV-Parser" target="_blank">
+    <a class="project-row" href="https://github.com/imabd645/CSV-Parser" target="_blank" rel="noopener">
       <div class="p-index">03</div>
       <div class="p-main">
         <div class="p-title-row"><div class="p-title">CSV Query Engine</div></div>
@@ -485,7 +570,7 @@ footer {
       <div class="p-arrow">↗</div>
     </a>
 
-    <a class="project-row" href="https://github.com/imabd645/DBMS" target="_blank">
+    <a class="project-row" href="https://github.com/imabd645/DBMS" target="_blank" rel="noopener">
       <div class="p-index">04</div>
       <div class="p-main">
         <div class="p-title-row"><div class="p-title">TxtDB</div></div>
@@ -495,17 +580,17 @@ footer {
       <div class="p-arrow">↗</div>
     </a>
 
-    <a class="project-row" href="https://pypi.org/project/urdu-nlp/" target="_blank">
+    <a class="project-row" href="https://pypi.org/project/urdu-nlp/" target="_blank" rel="noopener">
       <div class="p-index">05</div>
       <div class="p-main">
         <div class="p-title-row"><div class="p-title">urdu-nlp</div></div>
-        <div class="p-desc">An NLP toolkit for Urdu, published to PyPI — tokenization, normalization, stemming, and Roman Urdu transliteration.</div>
+        <div class="p-desc">An NLP toolkit for Urdu, published to PyPI by Abdullah Masood — tokenization, normalization, stemming, and Roman Urdu transliteration.</div>
         <div class="p-tags"><span>Python</span><span>NLP</span><span>PyPI</span><span>Urdu</span></div>
       </div>
       <div class="p-arrow">↗</div>
     </a>
 
-    <a class="project-row" href="https://splitkar.site" target="_blank">
+    <a class="project-row" href="https://splitkar.site" target="_blank" rel="noopener">
       <div class="p-index">06</div>
       <div class="p-main">
         <div class="p-title-row"><div class="p-title">Splitkar</div></div>
@@ -515,7 +600,7 @@ footer {
       <div class="p-arrow">↗</div>
     </a>
 
-    <a class="project-row" href="https://github.com/imabd645" target="_blank">
+    <a class="project-row" href="https://github.com/imabd645" target="_blank" rel="noopener">
       <div class="p-index">07</div>
       <div class="p-main">
         <div class="p-title-row"><div class="p-title">FYP Management System</div></div>
@@ -565,17 +650,26 @@ footer {
 <section id="contact" class="contact-section">
   <div class="eyebrow">GET IN TOUCH</div>
   <h2 class="section-head">Let's talk.</h2>
-  <p class="lede">Open to interesting projects, collaborations, and conversations about systems, languages, or computing history.</p>
+  <p class="lede">Open to interesting projects, collaborations, and conversations about systems, languages, or computing history. Reach out to Abdullah Masood directly through any of the links below.</p>
 
   <div class="contact-links reveal">
-    <a href="https://github.com/imabd645" target="_blank"><span>GitHub<div class="clabel">github.com/imabd645</div></span><span>↗</span></a>
-    <a href="https://splitkar.site" target="_blank"><span>Splitkar<div class="clabel">splitkar.site</div></span><span>↗</span></a>
-    <a href="https://pypi.org/project/urdu-nlp/" target="_blank"><span>PyPI<div class="clabel">urdu-nlp</div></span><span>↗</span></a>
+    <a href="mailto:imabd645@gmail.com"><span>Email<div class="clabel">imabd645@gmail.com</div></span><span>↗</span></a>
+    <a href="https://github.com/imabd645" target="_blank" rel="noopener"><span>GitHub<div class="clabel">github.com/imabd645</div></span><span>↗</span></a>
+    <a href="https://www.linkedin.com/in/abdullah-masood-3056a5379/" target="_blank" rel="noopener"><span>LinkedIn<div class="clabel">linkedin.com/in/abdullah-masood</div></span><span>↗</span></a>
+    <a href="https://splitkar.site" target="_blank" rel="noopener"><span>Splitkar<div class="clabel">splitkar.site</div></span><span>↗</span></a>
+    <a href="https://pypi.org/project/urdu-nlp/" target="_blank" rel="noopener"><span>PyPI<div class="clabel">urdu-nlp</div></span><span>↗</span></a>
   </div>
+
+  <!-- Hidden crawlable summary: reinforces name + identity for search engines without altering the visual design -->
+  <p class="visually-hidden">
+    Abdullah Masood is a Computer Science student at the University of Engineering and Technology (UET), Lahore, Pakistan.
+    He is the developer of the EZ programming language, TxtDB, the CSV Query Engine, the urdu-nlp Python package on PyPI,
+    and Splitkar, a bill-splitting and shared expense app for Pakistan. GitHub: github.com/imabd645. LinkedIn: linkedin.com/in/abdullah-masood-3056a5379. Email: imabd645@gmail.com.
+  </p>
 </section>
 
 <footer>
-  <span>Abdullah · Lahore, PK</span>
+  <span>Abdullah Masood · Lahore, PK</span>
   <span>Built by hand · 2026</span>
 </footer>
 
