@@ -156,8 +156,18 @@ nav {
   line-height: 0.92;
   letter-spacing: -0.02em;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   user-select: none;
+}
+
+.hero-name-line {
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
+.hero-name-line:last-child {
+  margin-top: 0.05em;
 }
 
 .hero-name span {
@@ -488,7 +498,10 @@ footer {
 <!-- HERO -->
 <section class="hero" id="home">
   <div class="hero-eyebrow">COMPUTER SCIENCE — UET LAHORE</div>
-  <h1 class="hero-name" id="heroName">Abdullah<br> Masood</h1>
+  <h1 class="hero-name" id="heroName">
+    <span class="hero-name-line">Abdullah</span>
+    <span class="hero-name-line">Masood</span>
+  </h1>
   <div class="hero-fullname">Abdullah Masood · Software Engineer &amp; CS Student, Lahore, Pakistan</div>
   <p class="hero-tagline">
     I'm <strong>Abdullah Masood</strong>, and I build <strong>compilers, databases, and web apps</strong> from
@@ -674,11 +687,12 @@ footer {
 </footer>
 
 <script>
-  // split hero name into hoverable letters
-  const heroName = document.getElementById('heroName');
-  heroName.innerHTML = heroName.textContent.split('').map(ch =>
-    `<span>${ch === ' ' ? '&nbsp;' : ch}</span>`
-  ).join('');
+  // split each hero name line into hoverable letters, line breaks stay intentional
+  document.querySelectorAll('.hero-name-line').forEach(line => {
+    line.innerHTML = line.textContent.split('').map(ch =>
+      `<span>${ch === ' ' ? '&nbsp;' : ch}</span>`
+    ).join('');
+  });
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(e => {
